@@ -5,9 +5,8 @@
 # Link através do próprio GITHUB
 
 https://marciotroise.github.io/linktree/
-#
-Cada index dentro da pasta TEMAS engloba cores de acordo com o nome dos mesmo
 
+Link para socias/divulgação na qual pode escolher a cor do tema ao clicar 
+no botão superior-direito.
 
-*Projeto ainda esta sendo trabalhado para deixa uma pagina como padrão
-podendo alterar as demais com um click na cor em uma parte criada com TEMAS
+Projeto em HTML e CSS basico com uma implementacao de JavaScript

@@ -18,10 +18,80 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<frameset cols="25%,25%,25%,25%"><!-- Indicando o espacamento das colunas em frame  -->
-    <frame src="Temas/padraoBlue.html"> <!--  espaço de 25% -->
-    <frame src="Temas/darkBlue.html"> <!--  espaço de 25% -->
-    <frame src="Temas/red.html">
-    <frame src="Temas/darkRed.html"> 
-</frameset>
+<body id="colorBody" class="">
+  <div class="buttons-themes">
+    <small class="Temas"> Temas:</small>
+    <button type="button" class="themes" id="B-red" onclick="changeBackground(1)"></button>
+    <button type="button" class="themes" id="B-darkRed" onclick="changeBackground(2)"></button>
+    <button type="button" class="themes" id="B-blue" onclick="changeBackground(3)"></button>
+    <button type="button" class="themes" id="B-darkBlue" onclick="changeBackground(4)"></button>
+  </div>
+  <div class="container">
+    <div class="avatar">
+      <img class="avatar-img" src="https://github.com/marciotroise.png" alt="">
+
+      <h1 id="user">Marcio Troise</h1>
+      <p id="contact-user"><strong><i>@marcio.troise</i></strong></small>
+    </div>
+
+    <ul>
+      <li href="" class="">
+        <a href="https://www.twitch.tv/sinixtr0" target="_blank">
+        🎮 Twitch
+        </a> 
+      </li>
+      <li href="" class="">
+        <a href="https://www.instagram.com/marciotroise/" target="_blank">
+        📸 Instagram
+        </a>        
+      </li>
+      <li href="" class="">
+        <a href="https://www.facebook.com/marcio.troise/" target="_blank">
+        ⏩ Facebook
+        </a>
+      </li>
+      <li href="" class="">
+        <a href="" target="_blank">
+        ❤️‍🔥 Youtube
+        </a>
+      </li>
+      <li href="" class="">
+        <a href="mailto:mtroise15@gmail.com" target="_blank">
+        💌 Contato
+        </a> 
+      </li>
+    </ul>
+
+    <footer> 
+      Criado com 💚 por 
+      <a href="https:/github.com/marciotroise" target="_blank">
+      <i>Marcio Troise</i>
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    function changeBackground(tipo) {
+      let mudarFundo = document.querySelector('body')
+
+      if (tipo == 1) {
+        mudarFundo.classList.remove('darkRed','blue','darkBlue')
+        mudarFundo.classList.add('red')
+      }
+      if (tipo == 2) {
+        mudarFundo.classList.remove('red','blue','darkBlue')
+        mudarFundo.classList.add('darkRed')
+      }
+      if (tipo == 3) {
+        mudarFundo.classList.remove('red','darkRed','darkBlue')
+        mudarFundo.classList.add('blue')
+      }
+      if (tipo == 4) {
+        mudarFundo.classList.remove('red','blue','darkRed')
+        mudarFundo.classList.add('darkBlue')
+      }
+    }
+  </script>
+
+</body>
 </html>

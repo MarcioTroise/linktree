@@ -19,30 +19,58 @@ body {
   color: var(--text-color);
 }
 
-body.dark-blue {
-  --bg-color: #00082f;
-  --text-color: #fff;
+#B-red {
+  background-color:  #fce4ed;
 }
 
-body.dark-blue a{
+#B-darkRed {
+  background-color: rgb(72, 0, 0);
+}
+
+#B-blue {
+  background-color: #9f80ff;
+}
+
+#B-darkBlue {
+  background-color:  #00082f;
+}
+
+.blue {
+  --bg-color: #9f80ff;
+  --text-color: #000728;
+  --primary-color: rgb(142, 50, 228);
+  --primary-color-dark: rgb(198, 52, 255);
+  --border-color: rgba(194, 88, 237);
+  transition: 0.8s;
+}
+
+.darkBlue {
+  --bg-color: #00082f;
+  --text-color: #fff;
+  transition: 0.8s;
+}
+
+.darkBlue a{
   color: #fff;
   opacity: 0.7;
 }
 
-body.red {
+.red {
   --text-color: #1f000b;
   --bg-color: #fce4ed;
   --border-color: #d6336c;
   --primary-color-dark:rgb(255, 0, 76);
   --primary-color:  rgb(254, 44, 124);
+  transition: 0.8s;
 }
 
-body.dark-red {
+.darkRed {
   --bg-color: rgb(72, 0, 0);
   --border-color: rgb(252, 50, 50);
   --primary-color: rgb(255, 52, 82);
   --primary-color-dark: rgb(255, 22, 45);
   --text-color: #fff;
+  transition: 0.8s;
 }
 
 img {
@@ -54,6 +82,26 @@ img {
   width: 300px;
   max-width: 100%;
   margin: 60px auto;
+}
+
+.buttons-themes {
+  max-width: 100%;
+  margin: 15px 8% 0 auto;
+  padding: 5px;
+  text-align: end;
+}
+
+.Temas {
+}
+
+.themes {
+  width: 30px;
+  height: 3px;
+  float: right;
+  padding: 10px;
+  margin: 0px 4px;
+  border-radius: 6px;
+  border: none;
 }
 
 .avatar-img {

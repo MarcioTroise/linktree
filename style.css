@@ -99,6 +99,12 @@ img {
   margin: 0px 4px;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.themes:hover {
+  transform: scale(1.1);
 }
 
 .avatar-img {
